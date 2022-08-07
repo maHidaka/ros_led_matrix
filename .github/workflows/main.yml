@@ -5,10 +5,8 @@ on: [push]
 jobs:
   build:
 
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     strategy:
-      matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
 
     steps:
     - uses: actions/checkout@v2
@@ -40,5 +38,3 @@ jobs:
 
     - name: Run PlatformIO
       run: pio run -d ros_led_arduino/
-      env:
-        PLATFORMIO_CI_SRC: ${{ matrix.example }}c
