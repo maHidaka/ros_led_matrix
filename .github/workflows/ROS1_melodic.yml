@@ -9,7 +9,7 @@ jobs:
         env:
           - {ROS_DISTRO: "melodic",
             ROS_REPO: "main",
-            CATKIN_LINT: "true",
+            CATKIN_LINT: "false",
             OPT_VI: "-vi",
             CATKIN_LINT_ARGS: "--ignore unknown_package"}
 
