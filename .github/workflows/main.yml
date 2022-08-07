@@ -41,4 +41,4 @@ jobs:
     - name: Run PlatformIO
       run: pio run
       env:
-        PLATFORMIO_CI_SRC: ${{ matrix.example }}
+        PLATFORMIO_CI_SRC: ${{ matrix.example }}c
