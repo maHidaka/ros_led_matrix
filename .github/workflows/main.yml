@@ -34,11 +34,11 @@ jobs:
         pip install --upgrade platformio
         wget https://github.com/xxxajk/spi4teensy3/archive/master.zip -O /tmp/spi4teensy3.zip
         unzip /tmp/spi4teensy3.zip -d /tmp
-        
+
     - name: Install library dependencies
       run: pio lib -g install 1
 
     - name: Run PlatformIO
-      run: pio run
+      run: pio run -d ros_led_arduino/
       env:
         PLATFORMIO_CI_SRC: ${{ matrix.example }}c
