@@ -1,0 +1,9 @@
+style: single
+disp1:
+  type: topic
+  trigger:
+    topic_name: /test1
+    topic_type: String
+  action:
+    mode: text
+    data: data
