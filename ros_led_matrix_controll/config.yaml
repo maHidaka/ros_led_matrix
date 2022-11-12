@@ -1,9 +1,18 @@
-style: single
-disp1:
+0:
+  position: left
   type: topic
   trigger:
     topic_name: /test1
-    topic_type: String
+    topic_type: Twist
+  action:
+    mode: text
+    data: data
+1:
+  position: right
+  type: service
+  trigger:
+    service_name: /test2
+    service_type: String
   action:
     mode: text
     data: data
